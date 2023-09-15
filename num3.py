@@ -16,9 +16,20 @@ is_pol = 0
 if txt == txt[::-1]:
     is_pol = 1
 
-is_mirr = 0
 ok = 1
 for i in txt:
     ok *= mirr_symbols.count(i)
-# if ok != 0:
-#     for  in txt
+if ok != 0:
+    for i in range(int(len(txt)/2)):
+        for mass in dict:
+            if mass[0] == txt[i]:
+                ok *= (mass[1] == txt[-i-1])
+
+if ok != 0 and is_pol == 1:
+    print(txt, "is a mirrored palindrom")
+elif ok != 0:
+    print(txt, "is a mirrored string")
+elif is_pol == 1:
+    print(txt, "is a regular palindrom")
+else:
+    print(txt, "is not a palindrom")
