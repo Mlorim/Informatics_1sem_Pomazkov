@@ -1,0 +1,5 @@
+txt = input()
+s = txt.count("...") + txt.count("!!!") + txt.count("?!") + txt.count("!?")
+txt = txt.replace("...","1").replace("!!!","1").replace("?!","1").replace("!?","1")
+s += txt.count("!") + txt.count("?") + txt.count(".")
+print(s)
