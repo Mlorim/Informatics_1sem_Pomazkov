@@ -2,8 +2,6 @@ import numpy as np
 data = open('data.txt', encoding='utf8').read()
 ind_words = data.split()
 
-
-
 def make_pairs(ind_words):
     for i in range(len(ind_words)-1):
         if ind_words[i][0].isupper() and (i == 0 or ind_words[i-1][-1] in ".?!\n"):
