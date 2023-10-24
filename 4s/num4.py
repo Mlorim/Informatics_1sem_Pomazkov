@@ -16,6 +16,7 @@ graf1 = fig.add_subplot(121)
 graf2 = fig.add_subplot(122)
 
 iris = pd.read_csv('iris_data.csv', delimiter=',')
+print(iris)
 length = len(iris["Id"])
 
 
@@ -46,7 +47,7 @@ graf2.set_xlabel('Length, cm')
 graf2.set_ylabel('Width, cm')
 
 coeff = LeastSquareMethod(petal_l, petal_w)
-graf2.plot(petal_l, [(x * coeff[0] + coeff[1]) for x in petal_l], label="Approximated values", color="r")
+graf2.plot(petal_l, [(x * coeff[0] + coeff[1]) for x in petal_l], label='Approximated values', color="r")
 graf2.legend()
 
 print("Approximating line coefficients: a = ", coeff[0], "b = ", coeff[1])

@@ -1,9 +1,9 @@
-def Fibonachi (n):
+def Fibonachi(n):
     if n == 1 or n == 2:
         return 1
     else:
-        return Fibonachi (n-2) + Fibonachi (n-1)
-# print(Fibonachi (int(input())))
+        return Fibonachi(n-2) + Fibonachi(n-1)
+print(Fibonachi(int(input())))
 
 def PrimeFactors (n):
     factors = []
@@ -16,4 +16,4 @@ def PrimeFactors (n):
     factors.append(n)
     return factors
 
-# print(int(input())))
+# print((int(input())))

@@ -1,16 +1,13 @@
-# import matplotlib.pyplot as plt
-# import numpy as np
-# import pandas as pd
-# import matplotlib as mpl
+# freq = {}
+# sent_mod = ['this', 'is', 'sunny', 'morning']
+# for word in sent_mod:
+#     if word not in freq.keys():
+#         freq[word] = 1
+#     else:
+#         freq[word] += 1
 #
-# x = [0,1,2,3,4]
-# y = [0,2,4,6,8]
-#
-# plt.plot(x,y, label='2x')
-# plt.legend()
-# plt.show()
+# print(freq)
 
-a = [3]
-b = [0]
-a += b
-print(a)
+d = ['2001', 'agreement', 'and', 'associated', 'accessing', 'all', 'any', 'alone', 'analyze', 'are', 'available', 'as', 'agrees', 'an', 'advised',]
+d.sort()
+print(d)
